@@ -1,0 +1,24 @@
+services:
+  spam-api:
+    build: 
+      context: ./spam-api
+    ports:
+      - "8000:8000"
+    networks:
+      - spam-network
+
+  streamlit-service:
+    build:
+      context: ./streamlit-service
+    ports:
+      - "8501:8501"
+    depends_on:
+      - spam-api
+    environment:
+      - DOCKER_CONTAINER=true 
+    networks:
+      - spam-network
+
+networks:
+  spam-network:
+    driver: bridge

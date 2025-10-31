@@ -1,2 +1,25 @@
-# spam-classifier-project
-Spam message classification with FastAPI and Streamlit
+# __Spam Classification Project__
+## __Проект для классификации спам-сообщений с использованием машинного обучения, FastAPI и Streamlit.__
+### __Особенности:__
+ML модель: RandomForest для классификации спам/не спам
+
+Backend: FastAPI с автоматической документацией Swagger
+
+Frontend: Streamlit с интуитивным интерфейсом
+
+Контейнеризация: Docker + Docker Compose для простого развертывания
+
+PRECISION: >98% на тестовых данных
+
+### __Инструменты:__
+
+FastAPI - современный веб-фреймворк
+
+Streamlit - фреймворк для веб-приложений данных
+
+Scikit-learn - машинное обучение
+
+Docker - контейнеризация
+
+NLTK - обработка естественного языка
+
